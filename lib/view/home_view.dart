@@ -1,4 +1,5 @@
 import 'package:app/widgets/background.dart';
+import 'package:app/widgets/benefit/benefits_bar.dart';
 import 'package:app/widgets/bottom_home_banner/bottom_home_banner.dart';
 import 'package:app/widgets/custom_appbar.dart';
 import 'package:app/widgets/home_banner/home_banner.dart';
@@ -41,6 +42,7 @@ class HomeView extends StatelessWidget {
                     ],
                   ),
                 ),
+                BenefitsBar()
               ],
             ),
           ),
