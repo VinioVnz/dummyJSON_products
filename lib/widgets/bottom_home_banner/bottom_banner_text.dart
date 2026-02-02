@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class BottomBannerText extends StatelessWidget {
-  const BottomBannerText({super.key});
+  final String text;
+  final String bottomText;
+  const BottomBannerText({super.key, required this.text, required this.bottomText});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +13,7 @@ class BottomBannerText extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            'TECLADO\nMECÂNICO\nGAMER',
+            text,
             style: TextStyle(
               fontSize: 14,
               fontFamily: 'Jura',
@@ -21,7 +23,7 @@ class BottomBannerText extends StatelessWidget {
           ),
 
            Text(
-            '60%',
+            bottomText,
             style: TextStyle(
               fontSize: 34,
               fontFamily: 'Jura',

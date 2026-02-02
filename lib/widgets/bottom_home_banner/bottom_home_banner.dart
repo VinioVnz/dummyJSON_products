@@ -4,25 +4,38 @@ import 'package:app/widgets/bottom_home_banner/floating_bottom_image.dart';
 import 'package:flutter/material.dart';
 
 class BottomHomeBanner extends StatelessWidget {
-  const BottomHomeBanner({super.key});
-  static const double _bannerHeight = 160;
+  final String text;
+  final String imagePath;
+  final String bottomText;
+  const BottomHomeBanner({
+    super.key,
+    required this.text,
+    required this.imagePath,
+    required this.bottomText,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+    final width = size.width;
+    final height = size.height;
     final colors = Theme.of(context).colorScheme;
+    
     return InkWell(
       borderRadius: BorderRadius.circular(20),
-      onTap: () {
-        
-      },
+      onTap: () {},
       child: SizedBox(
-        height: _bannerHeight,
+        height: height * 0.2,
+        width: width * 0.45,
         child: Stack(
           clipBehavior: Clip.none,
           children: [
-            BottomHomeBackgroundCard(topColor: colors.secondary, bottomColor: colors.tertiary,),
-            BottomBannerText(),
-            FloatingBottomImage(), 
+            BottomHomeBackgroundCard(
+              topColor: colors.secondary,
+              bottomColor: colors.tertiary,
+            ),
+            BottomBannerText(text: text, bottomText: bottomText),
+            FloatingBottomImage(imagePath: imagePath),
           ],
         ),
       ),
