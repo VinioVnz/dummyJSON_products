@@ -14,7 +14,6 @@ class MenuItem extends StatelessWidget {
         style: TextStyle(
           color: Theme.of(context).colorScheme.primary,
           fontSize: 14,
-          fontFamily: 'Jura'
         ),
       ),
     );

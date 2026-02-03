@@ -1,5 +1,6 @@
 import 'package:app/widgets/background.dart';
 import 'package:app/widgets/benefit/benefits_bar.dart';
+import 'package:app/widgets/best_product_section.dart';
 import 'package:app/widgets/bottom_home_banner/bottom_home_banner.dart';
 import 'package:app/widgets/bottom_home_banner_bar.dart';
 import 'package:app/widgets/custom_appbar.dart';
@@ -25,7 +26,9 @@ class HomeView extends StatelessWidget {
                 HomeBanner(),
                 SizedBox(height: 32),
                 BottomHomeBannerBar(),
-                BenefitsBar()
+                BenefitsBar(),
+                SizedBox(height: 48),
+                BestProductSection()
               ],
             ),
           ),

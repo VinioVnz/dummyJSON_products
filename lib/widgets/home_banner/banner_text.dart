@@ -10,7 +10,7 @@ class BannerText extends StatelessWidget {
       top: 30,
       child: Text(
         '-Cosmetics\n-Peripherals',
-        style: TextStyle(fontSize: 32, fontFamily: 'Jura', color: Colors.white),
+        style: TextStyle(fontSize: 32, color: Colors.white),
       ),
     );
   }

@@ -11,8 +11,8 @@ class App extends StatelessWidget {
       title: 'DummyJSON products',
       routes: {'/home': (_) => const HomeView()},
       initialRoute: '/home',
-
       theme: ThemeData(
+        fontFamily: 'Jura',
         useMaterial3: true,
         brightness: Brightness.dark,
         scaffoldBackgroundColor: const Color(0xff2A3440),

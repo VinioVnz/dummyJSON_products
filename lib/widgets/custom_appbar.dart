@@ -12,7 +12,7 @@ class CustomAppbar extends StatelessWidget {
       decoration: BoxDecoration(color: Theme.of(context).colorScheme.secondary),
       child: Row(
         children: [
-          Text('Dummy',style: TextStyle(fontFamily: 'Jura', fontSize: 30),),
+          Text('Dummy',style: TextStyle(fontSize: 30),),
           Expanded(
             child: Center(
               child: Row(

@@ -16,7 +16,6 @@ class BottomBannerText extends StatelessWidget {
             text,
             style: TextStyle(
               fontSize: 14,
-              fontFamily: 'Jura',
               color: Colors.white,
               fontWeight: FontWeight.bold,
             ),
@@ -26,7 +25,6 @@ class BottomBannerText extends StatelessWidget {
             bottomText,
             style: TextStyle(
               fontSize: 34,
-              fontFamily: 'Jura',
               color: Theme.of(context).colorScheme.secondary,
               fontWeight: FontWeight.bold,
             ),
