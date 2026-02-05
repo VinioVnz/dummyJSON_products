@@ -28,7 +28,9 @@ class HomeView extends StatelessWidget {
                 BottomHomeBannerBar(),
                 BenefitsBar(),
                 SizedBox(height: 48),
-                BestProductSection()
+                BestProductSection(),
+                SizedBox(height: 20,),
+                
               ],
             ),
           ),
