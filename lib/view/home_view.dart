@@ -17,10 +17,6 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       body: Background(
         child: SingleChildScrollView(
-          child: ConstrainedBox(
-            constraints: BoxConstraints(
-              minHeight: MediaQuery.of(context).size.height,
-            ),
             child: Column(
               children: const [
                 CustomAppbar(),
@@ -40,7 +36,6 @@ class HomeView extends StatelessWidget {
             ),
           ),
         ),
-      ),
     );
   }
 }

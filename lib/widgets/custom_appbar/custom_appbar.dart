@@ -23,10 +23,10 @@ class CustomAppbar extends StatelessWidget {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: const [
-                  MenuItem('Home'),
-                  MenuItem('Shop'),
-                  MenuItem('About Us'),
-                  MenuItem('FAQ'),
+                  MenuItem(title: 'Home', route: '/home'),
+                  MenuItem(title: 'Shop', route: '/shop'),
+                  MenuItem(title: 'About Us', route: '/aboutUs'),
+                  MenuItem(title: 'FAQ', route: '/faq'),
                 ],
               ),
             ),

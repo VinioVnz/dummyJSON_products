@@ -1,4 +1,7 @@
+import 'package:app/view/aboutus_view.dart';
+import 'package:app/view/faq_view.dart';
 import 'package:app/view/home_view.dart';
+import 'package:app/view/shop_view.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -9,7 +12,12 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'DummyJSON products',
-      routes: {'/home': (_) => const HomeView()},
+      routes: {
+        '/home': (_) => const HomeView(),
+        '/shop': (_) => const ShopView(),
+        '/aboutUs': (_) => const AboutUsView(),
+        '/faq': (_) => const FaqView()
+        },
       initialRoute: '/home',
       theme: ThemeData(
         fontFamily: 'Jura',
